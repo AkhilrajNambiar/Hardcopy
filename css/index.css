@@ -1,0 +1,129 @@
+@font-face{
+	src: url(../fonts/Ubuntu/Ubuntu-Light.ttf);
+	font-family: 'Ubuntu';
+}
+@font-face{
+	src: url(../fonts/OpenSans/OpenSans-Light.ttf);
+	font-family: 'OS light';
+}
+body{
+	background-image: url(../images/Background.png);
+}
+.header{
+	display: grid;
+	grid-template-columns: 1fr;	
+	font-family: 'OS light'
+}
+.header>div{
+	/*border: #000 solid;*/
+	padding: 1em;
+}
+.logcaption{
+	font-weight: bold;
+	font-size: 22px;
+	margin-top: -50px;
+}
+#line1{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: start;
+	grid-gap: 1em;
+}
+#line1>div{
+	/*border: #000 solid;*/
+}
+.index{
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.navigation{
+	text-align: center;
+}
+#navigation>li{
+	font-family: 'Ubuntu';
+	display: inline;
+	padding: 1em;
+	/*margin: em;*/
+	font-size: 1em;
+	font-weight: bold;
+	color: white;
+}
+li>a{
+	color: white;
+	text-decoration: none;
+}
+li.home{
+	text-decoration: underline;
+	text-decoration-color: white;
+}
+#navigation>li:hover{
+	text-decoration: underline;
+	text-decoration-color: white;
+	
+}
+
+#line2{
+	display: grid;
+	grid-template-columns:1fr 1fr;
+	grid-auto-rows: minmax(50px, auto);
+	align-items: end;
+}
+.search{
+	padding-top: 1.5em;
+	text-align: left;
+}
+.search>input{
+	padding: 1em;
+	border: #fff solid;
+	border-radius: 2em;
+	padding-right: 3em;
+	width: 70%;
+}
+.search>input:focus{
+	box-shadow: 2px 2px 20px 2px #0e0e0e;
+	border-color: #05b5fa;
+	outline: none;
+}
+.search>input:hover{
+	box-shadow: 2px 2px 20px 2px #0e0e0e;
+	border-color: #05b5fa;
+}
+#searchimg{
+	position: absolute;
+	vertical-align: middle;
+	margin-left: -42px;
+}
+/*#navigation{
+	margin-left: -15%;
+}*/
+
+#line3{
+	display: grid;
+	grid-template-columns: 1fr;
+	text-align: center;
+	font-weight: bold; 
+	font-size: 21px;
+}
+.main{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+	grid-auto-rows: minmax(40x,auto);
+	grid-gap: 1em;
+}
+.fiction>a,.non-fiction>a,.romance>a,.adventure>a,.horror>a,.comics>a,.PD>a,.classics>a{
+	text-align: center;
+	font-family: 'OS light';
+	text-decoration: underline;
+
+}
+.fiction,.non-fiction,.romance,.adventure,.horror,.comics,.PD,.classics{
+	/*text-align: center;*/
+	padding: 1em;
+	border: #097a27 solid;
+	border-radius: 15px;
+}
+
+.fiction:hover,.non-fiction:hover,.romance:hover,.adventure:hover,.horror:hover,.comics:hover,.PD:hover,.classics:hover{
+	box-shadow: 2px 2px 20px 2px #0e0e0e;
+}

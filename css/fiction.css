@@ -1,0 +1,14 @@
+@font-face{
+	src: url(../fonts/Ubuntu/Ubuntu-Light.ttf);
+	font-family: 'Ubuntu';
+}
+@font-face{
+	src: url(../fonts/OpenSans/OpenSans-Light.ttf);
+	font-family: 'OS light';
+}
+body{
+	background-image: url(../images/Background.png);
+	font-family: 'OS light';
+	/*color: #fff;*/
+	font-weight: bold;
+}

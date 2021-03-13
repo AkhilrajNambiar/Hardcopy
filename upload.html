@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hardcopy|Upload</title>
+	<link rel="icon" type="image/png" href="images/logo2.png">
+	<link rel="stylesheet" type="text/css" href="css/upload.css">
+</head>
+<body>
+<h1>Upload your books here!!</h1>
+<p>What we will be following over here is a specific kind of barter system, that focuses only on books. Yes, so the only thing that would be running this website is books(not ebooks). So upload the books that you feel you can part with, and share the joy of reading!!</p>
+<div class="guide">
+	<div class="ask">What do you have to upload?</div>
+	<div>Well, you have to upload the cover photo of your book, along with it's images from 6 angles. Feels tough? Don't worry the following guidelines will make you more than ready : </div>
+	<ol>
+		<li><strong>This is the most important tip that you should not at all avoid and it's simply that your book should not be having more than 50% damage.</strong>Simply put, your book should still be in a condition that the person who obtains your book, can be able to read without frustration! I know 50% sounds vague, so here are the tips that you could follow :</li>
+		<ol>
+			<li>Try not to add books with torn edges/covers.It makes reading and handling the book difficult. The left side book is something which is unacceptable(better if given to scrap dealers).Books with dog ears will be accepted.
+				<div class="quality">
+					<div class="bad">
+						<div><img src="images/torn_pages.png"></div>
+						<div><img src="images/wrong.jpg"></div>
+					</div>
+					<div class="good">
+						<div><img src="images/book_is_ok.png"></div>
+						<div><img src="images/right.jpg"></div>
+					</div>
+				</div>
+			</li>
+			<li>Books with torn pages won't be accepted, rather if the page binding is removed(upto a manageable extent) it still is better to be uploaded!
+			<div class="page">
+				<div class="bad">
+					<div><img src="images/page_torn.jpg"></div>
+					<div><img src="images/wrong.jpg"></div>
+				</div>
+				<div class="good">
+					<div><img src="images/binding_removed.jpg"></div>
+					<div><img src="images/right.jpg"></div>
+				</div>
+			</div>
+			</li>
+			<li>Markings are something that many love to make on books(don't count me among them) Be it to simplify meaning or any other stuff, their won't be any trouble as long as the text in the book is legible!</li>
+		</ol>
+		<li>The thumbnail that you post for the book, can be a picture that you have of that book from Google,Bing,Yahoo,etc.</li>
+		<ul>
+			<li>Try to use the same picture that you have on your hardcopy cover.It helps generate trust over you.</li>
+		</ul>
+	</ol>
+</div>
+<form method="post">
+	<p class="threeD">Well to give the buyer of your book, a 3D view of how your book looks:</p>
+	<div class="book_img_upload">
+		<div class="front_cover">
+			<label for="front_cover">Add the image of the front cover of your book (consider front view): </label>
+			<input type="file" name="front_cover" id="front_cover" required="required">
+			<div><a href="images/book_front.jpg">View Sample</a></div>
+		</div>
+		<div class="back_cover">
+			<label for="back_cover">Add the image of the back cover of your book (consider front view): </label>
+			<input type="file" name="back_cover" id="back_cover" required="required">
+			<div><a href="images/book_back.jpg">View Sample</a>
+			</div>
+		</div>
+		<div class="right_side">
+			<label for="right_side">Add the image of the right side of your book(consider front view) : </label>
+			<input type="file" name="right_side" id="right_side" required="required">
+			<div><a href="images/book_right.jpg">View Sample</a>
+			</div>
+		</div>
+		<div class="left_side">
+			<label for="left_side">Add the image of the left side of your book(consider front view) : </label>
+			<input type="file" name="left_side" id="left_side" required="required">
+			<div><a href="images/book_left.jpg">View Sample</a>
+			</div>
+		</div>
+		<div class="top_side">
+			<label for="top_side">Add the image of the top side of your book(consider front view) : </label>
+			<input type="file" name="top_side" id="top_side" required="required">
+			<div><a href="images/book_top.jpg">View Sample</a>
+			</div>
+		</div>
+		<div class="bottom_side">
+			<label for="bottom_side">Add the image of the bottom side of your book(consider front view) : </label>
+			<input type="file" name="bottom_side" id="bottom_side" required="required">
+			<div><a href="images/book_bottom.jpg">View Sample</a>
+			</div>
+		</div>
+		<div class="thumbnail">
+			<label for="thumbnail">Add the thumbnail for your file : </label>
+			<input type="file" name="thumbnail"
+			id="thumbnail" required="required">
+		</div>
+	</div>
+	<div class="genre">
+			<label for="genre">Book genre : </label>
+			<select id="genre">
+				<option>Fiction</option>
+				<option>Non-fiction</option>
+				<option>Romance</option>
+				<option>Adventure</option>
+				<option>Horror</option>
+				<option>Comics</option>
+				<option>Personality Development</option>
+				<option>Classics</option>
+			</select>
+		</div>
+</form>
+</body>
+</html>

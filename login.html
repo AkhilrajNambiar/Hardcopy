@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hardcopy|Login or Register</title>
+	<meta name="google-signin-client_id" content="526377655711-ai22b8lk57er9igjgt86vujt78a04u0s.apps.googleusercontent.com">
+	<link rel="icon" type="image/png" href="images/logo2.png">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+<div class="back">
+	<div class="login_box">
+	<div class="navig">
+		<div class="btn_color"></div>
+		<button class="toggler" id="btn1">Login</button>
+		<button class="toggler" id="btn2">Register</button>
+	</div>
+	<form class="input_group" id="login_form">
+		<input type="text" id="input_field" placeholder="Username" required>
+		<input type="password" id="input_field" placeholder="Password" required>
+		<input type="checkbox" id="checkbox">
+		<label for="checkbox">Forgot Password?</label>
+		<button id="login_btn">Login</button>
+		<p>OR</p>
+		<button id="sign_in_google" width="200px"><img src="images/google.png" id="google">Login with google</button>
+	</form>
+	<form class="input_group" id="registration_form">
+		<input type="text" id="input_field" placeholder="Username" required>
+		<input type="email" id="input_field" placeholder="Email ID" required>
+		<input type="password" id="input_field" placeholder="Password" required>
+		<input type="password" id="input_field" placeholder="Confirm Password" required>
+		<input type="checkbox" id="checkbox">
+		<label for="checkbox">Keep me logged in</label>
+		<button id="login_btn">Register</button>
+		<p>OR</p>
+		<button id="sign_in_google"><img src="images/google.png" id="google_reg">Register with google</button>
+	</form>
+	</div>
+</div>
+<script type="text/javascript">
+	var x = document.querySelector("#btn1");
+	var y = document.querySelector("#btn2");
+	var z = document.querySelector(".btn_color");
+	var login_form = document.querySelector("#login_form");
+	var registration_form = document.querySelector("#registration_form");
+	y.addEventListener("click", function (){
+		login_form.setAttribute("style","left:-400px");
+		registration_form.setAttribute("style","left:50px");
+		z.setAttribute("style","left:110px");
+	});
+	x.addEventListener("click", function (){
+		login_form.setAttribute("style","left:50px");
+		registration_form.setAttribute("style","left:500px");
+		z.setAttribute("style","left:0");
+	});
+</script>
+<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer>
+</script>
+</body>
+</html>

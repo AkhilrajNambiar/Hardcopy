@@ -1,0 +1,130 @@
+@font-face{
+	src: url(../fonts/Ubuntu/Ubuntu-Light.ttf);
+	font-family: 'Ubuntu';
+}
+@font-face{
+	src: url(../fonts/OpenSans/OpenSans-Light.ttf);
+	font-family: 'OS light';
+}
+body{
+	background-image: url(../images/Background.png);
+}
+h1,p{
+	text-align: center;	
+	font-family: 'OS light';
+	font-weight: bold;
+}
+h1{
+	font-family: 'Ubuntu';
+}
+.guide{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 1em;
+	font-family: 'OS light';
+	font-weight: bold;
+	margin-top: 3em;
+}
+.ask{
+	text-align: center;
+	font-size: 25px;
+}
+ol>ol{
+	margin-top: 3em;
+}
+.quality{
+	margin-top: 2em;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-bottom: 3em;
+}
+.page{
+	margin-top: 2em;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.bad:nth-child(even), .good:nth-child(even){
+	text-align: center;
+}
+.book_img_upload{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	font-family: 'OS light';
+	font-weight: bold;
+}
+.book_img_upload>div{
+	margin-top: 1em;
+}
+#front_cover{
+	border: #097a27 solid;
+	padding: 1em;
+	border-radius: 10px;
+	
+}
+#back_cover{
+	border: #097a27 solid;
+	padding: 1em;
+	border-radius: 10px;
+	
+}
+#right_side{
+	border: #097a27 solid;
+	padding: 1em;
+	border-radius: 10px;
+	
+}
+#left_side{
+	border: #097a27 solid;
+	padding: 1em;
+	border-radius: 10px;
+
+}
+#top_side{
+	border: #097a27 solid;
+	padding: 1em;
+	border-radius: 10px;
+	
+}
+#bottom_side{
+	border: #097a27 solid;
+	padding: 1em;
+	border-radius: 10px;
+	
+}
+#front_cover:hover{
+	box-shadow: 2px 2px 20px 2px #0e0e0e;
+}
+#back_cover:hover{
+	box-shadow: 2px 2px 20px 2px #0e0e0e;
+}
+#right_side:hover{
+	box-shadow: 2px 2px 20px 2px #0e0e0e;
+}
+#left_side:hover{
+	box-shadow: 2px 2px 20px 2px #0e0e0e;
+}
+#top_side:hover{
+	box-shadow: 2px 2px 20px 2px #0e0e0e;
+}
+#bottom_side:hover{
+	box-shadow: 2px 2px 20px 2px #0e0e0e;
+}
+div>select{
+	/*padding: 1em;*/
+	font-size: 20px;
+	text-align: center;
+	margin-top: 2em;
+	border: #fff solid;
+	border-radius: 5px;
+}
+.genre{
+	text-align: center;
+}
+.genre>label{
+	font-family: 'Ubuntu';
+	font-weight: bold;
+	font-size: 20px;
+}
+.threeD{
+	font-size: 23px;
+}
